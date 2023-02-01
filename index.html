@@ -59,6 +59,10 @@
           color: red;
         }
       }
+
+      html {
+  scroll-behavior: smooth;
+ }
     </style>
   </head>
   <body
@@ -68,20 +72,44 @@
       font-family: 'Almarai', sans-serif;
     "
   >
-    <section
-      style="
-        margin: auto;
-        padding: 20px;
-        width: 85%;
-        background-color: #b02a2a;
-        height: 50px;
-        border-radius: 15px;
-      "
-    >
-      <p style="font-size: large; color: white; text-align: center">
-        if you feel a little lost just use Ctrl + F !
-      </p>
-    </section>
+    <header></header>
+      <div
+        style="
+          margin: auto;
+          margin-bottom: -30px;
+          padding: 20px;
+          width: 85%;
+          background-color: #b02a2a;
+          height: 50px;
+          border-radius: 15px;
+          position: relative;
+          z-index: 3;
+        "
+      >
+        <p style="font-size: large; color: white; text-align: center">
+          if you feel a little lost just use Ctrl + F !
+        </p>
+      </div>
+
+      <div
+        style="
+          margin: auto;
+          padding: 20px;
+          width: 85%;
+          background-color: #404a99;
+          height: 20px;
+          border-radius: 15px;
+          position: relative;
+          z-index: 2;
+          
+        "
+      >
+      <a style="position: absolute;
+    bottom: 0; color: rgb(255, 255, 255);" href="#bottom">Go To Bottom</a>
+    </div>
+    </header>
+    
+
 
     <section
       style="
@@ -267,6 +295,7 @@
       </p>
     </section>
     <footer
+    id="bottom"
       style="
         margin: auto;
         padding: 20px;
