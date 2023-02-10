@@ -44,6 +44,31 @@ for (i = 0; i < li.length; i++) {
     }
   }
 }
+
+function getFocosed() {
+  var input;
+  input = document.getElementById('myInput');
+  input.setAttribute("placeholder", "")
+i++;
+}
+
+var sus = 0;
+function focosLost() {
+  var input;
+  
+  input = document.getElementById('myInput');
+  const names = ["Search for Things...", "Search for Movies...", "Search for Games...", "Search for Serise...", "Search for Files..."];
+  sus++;
+  if (sus == 5) {
+    sus = 0;
+  }
+  input.setAttribute("placeholder", names[sus])
+  
+  i
+  
+  
+  
+}
     </script>
     <style>
   input[type=text] {
@@ -54,7 +79,7 @@ display: grid;
 justify-content: center;
  display: block;
   box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(49, 113, 210);
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
@@ -67,6 +92,7 @@ justify-content: center;
 
 input[type=text]:focus {
   width: 100%;
+  
 }
 #myUL {
 
@@ -141,7 +167,7 @@ input[type=text]:focus {
         display: flex;
         flex-flow: column wrap;
         align-items: center; margin-bottom: -10px;";>
-        <input style=" margin-left: -5px; margin-bottom: -10px;height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Things...">
+        <input style=" margin-left: -5px; margin-bottom: -10px;height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" onabort="focosLost()" placeholder="Search for Things..." onfocus="getFocosed()" onfocusout="focosLost()">
       </div>
       </div>
 
@@ -162,7 +188,7 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
       <a style="position: absolute;
     bottom: 0; color: rgb(255, 255, 255);" href="#bottom">Go to Bottom</a>
     <a style="position: absolute;
-    bottom: 0; color: rgb(255, 255, 255); right: 15px;" href="https://github.com/phantomboy0/Archive/discussions">Archive's Forum</a>
+    bottom: 0; color: rgb(255, 255, 255); right: 15px;" href="https://github.com/phantomboy0/phantomboy0.github.io/discussions">Archive's Forum</a>
     </div>
     </header>
     
