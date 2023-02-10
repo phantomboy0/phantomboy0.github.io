@@ -24,8 +24,57 @@
     >
       Amir's Archive
     </h1>
-    <script></script>
+    <script>
+     function myFunction() {
+  // Declare variables
+var input, filter, ul, li, a, i, txtValue;
+ input = document.getElementById('myInput');
+ filter = input.value.toUpperCase();
+ ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+  // Loop through all list items, and hide those who don't match the
+
+for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("h2")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+    </script>
     <style>
+  input[type=text] {
+    width: 200px;
+    
+display: grid;
+
+justify-content: center;
+ display: block;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('search.png');
+  background-position: 10px 8px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+#myUL {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
       a:link {
         text-decoration: none;
         color: rgb(49, 113, 210);
@@ -81,15 +130,19 @@
           padding: 20px;
           width: 85%;
           background-color: #b02a2a;
-          height: 50px;
+          height: 30px;
           border-radius: 15px;
           position: relative;
           z-index: 3;
         "
       >
-        <p style="font-size: large; color: white; text-align: center">
-          if you feel a little lost just use Ctrl + F !
-        </p>
+        <div style=" position: relative;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; margin-bottom: -10px;";>
+        <input style=" margin-left: -5px; margin-bottom: -10px;height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Things...">
+      </div>
       </div>
 
       <div
@@ -113,6 +166,7 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
     </div>
     </header>
     
+    
 
 
     <section
@@ -130,7 +184,10 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
         margin-bottom: 40px;
       "
     >
-    <h2>A new wild Forum has arrived!| !فروم سایت ساخته شد</h2>
+    <ul id="myUL">
+
+   
+    <li><h2>A new wild Forum has arrived!| !فروم سایت ساخته شد</h2>
     <div>
       <img src="images/forum1.jpg" alt="" style="width:100%; max-width:320px; height:100%; max-height: 180px; border-radius: 13px; float: right; margin-left: 5px;">
       <p style="color: white; min-height: 180px;" dir="rtl" >
@@ -143,10 +200,10 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
         >اینجا</a
       > کلیک کنید
       </p>
-      
+      </li>
     </div>
     
-    <h2>Blade Runner 2049 (2017) | تیغه دونده 2049</h2>
+    <li><h2>Blade Runner 2049 (2017) | تیغه دونده 2049</h2>
       <p style="color: white">
         <a
           href="https://dl11.uploding.fun/Movies/2017/01/Blade%20Runner%202049/Blade.Runner.2049.2017.PROPER.480p.RMTeam.mkv"
@@ -156,8 +213,8 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
           href="https://dl11.uploding.fun/Movies/2017/01/Blade%20Runner%202049/Blade.Runner.2049.2017.PROPER.720p.x265.MkvCage.mkv"
           >دانلود (زیرنویس فارسی- 720)</a
         ><br/>
-      </p>
-    <h2>Wednesday | چهارشنبه</h2>
+      </p></li>
+    <li><h2>Wednesday | چهارشنبه</h2>
       <p style="color: white">
         <a
           href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E01.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
@@ -191,15 +248,15 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
 href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E08.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
 >فصل یک -قسمت 8</a
 ><br />
-      </p>
-      <h2>Kubo Won't Let Me Be Invisible | 久保さんは僕を許さない</h2>
+      </p></li>
+      <li><h2>Kubo Won't Let Me Be Invisible | 久保さんは僕を許さない</h2>
       <p style="color: white">
         <a
           href="https://9animetv.to/watch/kubo-wont-let-me-be-invisible-18254?ep=97130"
           >فصل یک - پخش آنلاین همه قسمت ها</a
         ><br />
-      </p>
-      <h2>The Witcher | ویچر</h2>
+      </p></li>
+      <li><h2>The Witcher | ویچر</h2>
       <p style="color: white">
         <a
           href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E01.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
@@ -266,10 +323,10 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
           href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E08.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
           >فصل دو - قسمت هشتم </a
         ><br />
-      </p>
+      </p></li>
       <br />
 
-      <h2 style="color: white">Inside Job | توطئه داخلی</h2>
+      <li><h2 style="color: white">Inside Job | توطئه داخلی</h2>
       <p style="color: white">
         <a
           href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E01.720p.WEBRip.2CH.x265.HEVC-PSA.mkv"
@@ -344,21 +401,22 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
           href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E08.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
           >فصل دو - قسمت هشتم </a
         ><br />
-      </p>
-      <h2 style="color: white">Bocchi the Rock! | ぼっち・ざ・ろっく！</h2>
+      </p></li>
+      <li><h2 style="color: white">Bocchi the Rock! | ぼっち・ざ・ろっく！</h2>
       <p style="color: white">
         <a href="https://9anime.vc/watch/bocchi-the-rock-17479?ep=94535"
           >فصل یک - پخش آنلاین همه قسمت ها </a
         ><br />
 
         <br />
-      </p>
+      </p></li>
 
-      <h2 style="color: white">هاست سایت برای اولین بار روی گیت هاب!</h2>
+     <li><h2 style="color: white">هاست سایت برای اولین بار روی گیت هاب!</h2>
       <p style="color: white">
         برای اولین بار در تاریخ سایت هاست شد و بخاطر کمبود منابع این هاست روی
         گیت هاب! که برای برنامه نویسی هست انجام شد
-      </p>
+      </p></li>
+       </ul>
     </section>
     <footer
     
