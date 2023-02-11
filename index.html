@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     
+    
     <title>Amir's Archive</title>
     <h1
       style="
@@ -49,7 +50,8 @@ function getFocosed() {
   var input;
   input = document.getElementById('myInput');
   input.setAttribute("placeholder", "")
-i++;
+
+
 }
 
 var sus = 0;
@@ -63,9 +65,6 @@ function focosLost() {
     sus = 0;
   }
   input.setAttribute("placeholder", names[sus])
-  
-  i
-  
   
   
 }
@@ -82,7 +81,7 @@ justify-content: center;
   border: 2px solid rgb(49, 113, 210);
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
+  background-color: rgb(49, 113, 210);
   background-image: url('search.png');
   background-position: 10px 8px; 
   background-repeat: no-repeat;
@@ -167,7 +166,7 @@ input[type=text]:focus {
         display: flex;
         flex-flow: column wrap;
         align-items: center; margin-bottom: -10px;";>
-        <input style=" margin-left: -5px; margin-bottom: -10px;height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" onabort="focosLost()" placeholder="Search for Things..." onfocus="getFocosed()" onfocusout="focosLost()">
+        <input style="height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Things..." onfocus="getFocosed()" onfocusout="focosLost()">
       </div>
       </div>
 
