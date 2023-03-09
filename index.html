@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="google-site-verification" content="RascRloBy8_Lms3f5O9lukfEQ8NSf_t4rqfUxDd1yrQ" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<meta name="keywords" content="Archive, Download, movie, amir's archive, amir">
+<meta name="description" content="A Website For archive and things!">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
     
     <title>Amir's Archive</title>
@@ -26,20 +29,20 @@
     <script>
      function myFunction() {
   
-var input, filter, ul, li, a, i, txtValue, showing, noresult;
+var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
  input = document.getElementById('myInput');
  filter = input.value.toUpperCase();
  ul = document.getElementById("myUL");
   li = ul.getElementsByTagName('li');
   noresult = document.getElementById("NoResult");
- 
+ nani = false;
 
 for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("h2")[0];
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
-      
+      nani = true;
     } else {
       li[i].style.display = "none";
      
@@ -47,8 +50,18 @@ for (i = 0; i < li.length; i++) {
 
     
   }
+
+  if (nani == true) {
+    noresult.style.display = "none";
+  } else {
+    noresult.style.display = "";
+  }
+
+  
   
 }
+
+
 
 function getFocosed() {
   var input;
@@ -72,6 +85,7 @@ function focosLost() {
   
   
 }
+
     </script>
     <style>
   input[type=text] {
@@ -691,7 +705,9 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
         گیت هاب! که برای برنامه نویسی هست انجام شد
       </p></li>
 
-      <h2 id="NoResult" style="color: white; background-color: #aa3f93; padding-top: -10px; text-align: center; display: none;">No results found! | !نتیجه ای یافت نشد</h2>
+      <h2 id="NoResult" style="color: #b02a2a; background-color: transparent; padding-top: -10px; text-align: center; display: none; font-size: x-large;">No results found <span class="material-symbols-outlined">
+        block
+        </span> نتیجه ای یافت نشد</h2>
       
        </ul>
     </section>
@@ -727,5 +743,5 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
     </footer>
    
      </body>
-  <div id="bottom"></div>
+  <div id="bottom" style="margin: auto;"></div>
 </html>
