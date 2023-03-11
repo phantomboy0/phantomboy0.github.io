@@ -89,6 +89,48 @@ function focosLost() {
 
     </script>
     <style>
+
+  .card-1 {
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    position: relative;
+    width: 22%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+    float: left;
+    
+  }
+  .card-1:before {
+    border-radius: 10px;
+    background: linear-gradient(
+   
+    155deg, rgba(30,30,30,1) 69%, rgba(101,22,155,1) 79%, rgba(227,6,198,1) 89%, rgba(255,0,44,1)
+
+  );
+
+ 
+
+
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .card-1:hover:before, .card-1:active {
+    background-position: 100% 100%;
+    border-radius: 10px;
+  }
+
   input[type=text] {
     width: 200px;
     
@@ -249,7 +291,7 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
         background-color: #1e1e1e;
         height: auto;
         border-radius: 15px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
       "
     >
     <ul id="myUL">
@@ -788,12 +830,17 @@ href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S0
     </div>
        </ul>
     </section>
+
+   <div style="overflow: auto; margin: auto; width: 90%;">
+<div class="card-1"></div> <div class="card-1"></div> <div class="card-1"></div> <div class="card-1"></div>
+</div>
+
     <footer
     
       style="
         margin: auto;
         padding: 20px;
-        width: 85%;
+        width: 86%;
         background-color: #4d0baa;
         height: 50px;
         border-radius: 15px;
