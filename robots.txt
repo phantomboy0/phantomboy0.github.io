@@ -1,2 +1,3 @@
-User-agent: *
-Sitemap: https://amir.gw.to/sitemap.xml
+user-agent: magicsearchbot
+disallow: 
+sitemap: https://amir.gw.to/sitemap.xml
