@@ -63,7 +63,38 @@ for (i = 0; i < li.length; i++) {
   
 }
 
+function findtag(filter) {
+  
+  var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
 
+   ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+    noresult = document.getElementById("NoResult");
+   nani = false;
+  
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("h2")[0];
+      txtValue = a.id;
+      if (txtValue.indexOf(filter) > -1) {
+        li[i].style.display = "";
+        nani = true;
+      } else {
+        li[i].style.display = "none";
+       
+      }
+  
+      
+    }
+  
+    if (nani == true) {
+      noresult.style.display = "none";
+    } else {
+      noresult.style.display = "";
+    }
+  
+    
+    
+  }
 
 function getFocosed() {
   var input;
@@ -94,6 +125,7 @@ function Tag(tag) {
 
   input.value = tag;
   myFunction();
+  input.value = "";
 }
 
 function delay (URL) {
@@ -367,6 +399,14 @@ input[type=text]:focus {
   scroll-behavior: smooth;
  }
 
+ #NavBar::-webkit-scrollbar {
+display: none;
+ }
+ #NavBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+ }
+
  .title {
   background: linear-gradient(
     90deg, rgba(94,56,194,1) 0%, rgba(42,50,122,1) 33%, rgba(172,69,209,1) 66%, rgba(94,56,194,1) 100%
@@ -429,23 +469,34 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
     bottom: 0; color: rgb(255, 255, 255);" href="#bottom">Go to Bottom</a>
 
 
-    <div style="display: flex; justify-content: center; align-items: center; margin-top: 8px; gap: 10px;">
-      <a style="background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(95, 154, 213); padding-left: 5px; padding-right: 5px; "
-            href="javascript:Tag('Ghasemis Gang Wars')"
-            >Ghasemi's Gang Wars</a
-          >
-          <a style="background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(121, 232, 65); padding-left: 5px; padding-right: 5px;"
-          href="javascript:Tag('MyProjects:')" 
-          >My Projects</a
-        > </div>
+    
 
 
     <a style="position: absolute;
     bottom: 0;line-height: 1.3; color: rgb(255, 255, 255); right: 15px;" href="https://github.com/phantomboy0/phantomboy0.github.io/discussions">Archive's Forum</a>
     </div>
     </header>
-    
-  
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <div id="NavBar" style=" align-items: center; height: 30px; overflow-x: auto;white-space: nowrap;display: flex;   margin-top: 8px; gap: 10px;">
+      <a style="margin-left: 3.5%; background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px;"
+        href="javascript:findtag('')" 
+        >All</a
+      >
+      <a style=" background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(95, 154, 213); padding-left: 5px; padding-right: 5px; "
+            href="javascript:findtag('Ghasemis Gang Wars')"
+            >Ghasemi's Gang Wars</a
+          >
+          <a style="background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(121, 232, 65); padding-left: 5px; padding-right: 5px;"
+          href="javascript:findtag('MyProjects')" 
+          >My Projects</a
+        > 
+        <a style=" background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(108, 45, 186); padding-left: 5px; padding-right: 5px; "
+        href="javascript:findtag('ArchiveofArchives')"
+        >Archive of Archives</a
+      >
+      
+        </div>
+      </div>
 
 
     <section
@@ -453,7 +504,7 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
         margin: auto;
         padding-left: 20px;
         padding-right: 20px;
-        margin-top: 60px;
+        margin-top: 30px;
         border-style: solid;
         border-width: 3px;
         border-color: rgb(49, 113, 210);
@@ -467,7 +518,17 @@ background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%
 
     
     <ul id="myUL">
-
+      <li><h2 id="MyProjects">gg_Ghasemi map (source 1)</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\gmod mods 2023\garry's-mod-Important-mods-part1-2023.zip"
+            >دانلود - بخش اول</a
+          ><br />
+          <a
+          href="files\2023\gmod mods 2023\gm_fork.zip"
+          >gm_fork map DOWNLOAD</a
+        ><br />
+        </p></li>
       <li><h2>Garry's mod essential mods collection (2023) | مجموعه مود های گریز مود 2023</h2>
         <p style="color: white">
           <a
