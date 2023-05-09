@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="RascRloBy8_Lms3f5O9lukfEQ8NSf_t4rqfUxDd1yrQ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<meta name="keywords" content="Archive, Download, movie, amir's archive, amir">
+<meta name="description" content="A Website For archive and things!">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="canonical" href="https://amiru.eu.org/"/>
+   
+    
+    
+    
+    <title>Amir's Archive</title>
+    <h1
+      style="
+        margin-top: 40px;
+        text-align: center;
+        font-family: 'Almarai', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+        animation: myanimation 10s infinite;
+      "
+      id="Header"
+    >
+      Amir's Archive
+    </h1>
+    <h2 style="background-color: transparent; font-weight: 400; font-family: 'Rubik', sans-serif; text-align: center; font-size:larger;">A website about <span class="title">archive</span> and <span class="title">things</span>.</h2>
+    <script>
+     function myFunction() {
+  
+var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
+ input = document.getElementById('myInput');
+ filter = input.value.toUpperCase();
+ ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+  noresult = document.getElementById("NoResult");
+ nani = false;
+
+for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("h2")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+      nani = true;
+    } else {
+      li[i].style.display = "none";
+     
+    }
+
+    
+  }
+
+  if (nani == true) {
+    noresult.style.display = "none";
+  } else {
+    noresult.style.display = "";
+  }
+
+  
+  
+}
+
+function findtag(filter) {
+  
+  var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
+
+   ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+    noresult = document.getElementById("NoResult");
+   nani = false;
+  
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("h2")[0];
+      txtValue = a.id;
+      if (txtValue.indexOf(filter) > -1) {
+        li[i].style.display = "";
+        nani = true;
+      } else {
+        li[i].style.display = "none";
+       
+      }
+  
+      
+    }
+  
+    if (nani == true) {
+      noresult.style.display = "none";
+    } else {
+      noresult.style.display = "";
+    }
+  
+    
+    
+  }
+
+function getFocosed() {
+  var input;
+  input = document.getElementById('myInput');
+  input.setAttribute("placeholder", "")
+
+
+}
+
+
+var sus = 0;
+function focosLost() {
+  var input;
+  
+  input = document.getElementById('myInput');
+  const names = ["Search for Things...", "Search for Movies...", "Search for Games...", "Search for Serise...", "Search for Files..."];
+  sus++;
+  if (sus == 5) {
+    sus = 0;
+  }
+  input.setAttribute("placeholder", names[sus])
+  
+  
+}
+
+function Tag(tag) {
+  var input;
+  input = document.getElementById('myInput');
+
+  input.value = tag;
+  myFunction();
+  input.value = "";
+}
+
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 500 );
+}
+
+    </script>
+    <style>
+
+  .card-1 {
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    position: relative;
+    width: 22%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+    float: left;
+    color: white;
+  }
+
+  .card-1:link {
+    color: white;
+  }
+ .card-1:visited {
+  color: white;
+ }
+  
+  .card-1:before {
+    border-radius: 10px;
+    background: linear-gradient(
+   
+    155deg, rgba(30,30,30,1) 60%, rgba(101,22,155,1) 79%, rgba(227,6,198,1) 89%, rgba(255,0,44,1)
+
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .card-1:hover:before, .card-1:active {
+    background-position: 100% 100%;
+    border-radius: 10px;
+    transform: scale(1.03, 1.01);
+  }
+
+  .card-2 {
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    position: relative;
+    width: 22%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+    float: left;
+    
+  }
+  .card-2:before {
+    border-radius: 10px;
+    background: linear-gradient(
+   
+    155deg, rgba(30,30,30,1) 60%, rgba(22,97,155,1) 79%, rgba(0,97,255,1) 89%, rgba(0,0,255,1) 100%
+
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .card-2:link {
+    color: white;
+  }
+ .card-2:visited {
+  color: white;
+ }
+
+  .card-2:hover:before, .card-2:active {
+    background-position: 100% 100%;
+    border-radius: 10px;
+    transform: scale(1.03, 1.01);
+  }
+  .card-3 {
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    position: relative;
+    width: 22%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+    float: left;
+    
+  }
+  .card-3:before {
+    border-radius: 10px;
+    background: linear-gradient(
+   
+    155deg, rgba(30,30,30,1) 60%, rgba(164,255,84,1) 82%, rgba(69,182,73,1) 100%
+
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .card-3:hover:before, .card-1:active {
+    background-position: 100% 100%;
+    border-radius: 10px;
+    transform: scale(1.03, 1.01);
+  }
+
+  .card-3:link {
+    color: white;
+  }
+ .card-3:visited {
+  color: white;
+ }
+
+  .card-4 {
+    aspect-ratio: 1.5/1;
+    cursor: pointer;
+    position: relative;
+    width: 22%;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left:2.5%;
+    float: left;
+    
+  }
+  .card-4:before {
+    border-radius: 10px;
+    background: linear-gradient(
+   
+    155deg, rgba(30,30,30,1) 60%, rgba(255,164,54,1) 84%, rgba(255,255,0,1) 100%
+
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 350ms ease, transform 350ms ease;
+  width: 100%;
+  z-index: 1;
+  }
+
+  .card-4:hover:before, .card-1:active {
+    background-position: 100% 100%;
+    border-radius: 10px;
+    transform: scale(1.03, 1.01);
+  }
+  .card-4:link {
+    color: white;
+  }
+ .card-4:visited {
+  color: white;
+ }
+  
+
+  input[type=text] {
+    width: 200px;
+    
+display: grid;
+
+justify-content: center;
+ display: block;
+  box-sizing: border-box;
+  border: 2px solid rgb(49, 113, 210);
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgb(49, 113, 210);
+  background-image: url('search.png');
+  background-position: 10px 8px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+  
+}
+#myUL {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+      a:link {
+        text-decoration: none;
+        color: rgb(49, 113, 210);
+    
+        line-height: 1.5;
+      }
+      a:visited {
+        text-decoration: none;
+        color: rgb(255, 202, 105);
+        
+      }
+
+      
+
+      h2 {
+        color: white;
+        background-color: rgb(64, 74, 153);
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      @keyframes myanimation {
+        0% {
+          color: red;
+        }
+        25% {
+          color: yellow;
+        }
+        50% {
+          color: green;
+        }
+        75% {
+          color: blue;
+        }
+        100% {
+          color: red;
+        }
+      }
+
+      @keyframes title-pan {
+        from {
+          background-position: 0% center;
+        }
+
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      html {
+  scroll-behavior: smooth;
+ }
+
+ #NavBar::-webkit-scrollbar {
+display: none;
+ }
+ #NavBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+ }
+
+ .title {
+  background: linear-gradient(
+    90deg, rgba(94,56,194,1) 0%, rgba(42,50,122,1) 33%, rgba(172,69,209,1) 66%, rgba(94,56,194,1) 100%
+  );
+  animation: title-pan 3s linear infinite;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+
+ }
+    </style>
+  </head>
+  <body
+    style="
+      margin: auto;
+      background-color: #1f2028;
+      font-family: 'Almarai', sans-serif;
+    "
+  >
+    <header></header>
+      <div
+        style="
+          margin: auto;
+          margin-bottom: -30px;
+          padding: 20px;
+          width: 85%;
+          background-color: #b02a2a;
+          height: 30px;
+          border-radius: 15px;
+          position: relative;
+          z-index: 3;
+        "
+      >
+        <div style=" position: relative;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center; margin-bottom: -10px;";>
+        <input value="" style="height: 30px; border-radius: 15px; color: #fdfdfd; background-color: #1f2028; text-align: center; border: 2px rgb(49, 113, 210);" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Things..." onfocus="getFocosed()" onfocusout="focosLost()">
+      </div>
+      </div>
+
+      <div
+        style="
+          margin: auto;
+          padding: 20px;
+          width: 85%;
+          background: rgb(191,57,137);
+background: linear-gradient(90deg, rgba(191,57,137,1) 0%, rgba(107,80,176,1) 53%, rgba(9,87,179,1) 100%); 
+          height: 11px;
+          border-radius: 15px;
+          position: relative;
+          z-index: 2;
+          
+        "
+      >
+      <a style="position: absolute; line-height: 1.3;
+    bottom: 0; color: rgb(255, 255, 255);" href="#bottom">Go to Bottom</a>
+
+
+    
+
+
+    <a style="position: absolute;
+    bottom: 0;line-height: 1.3; color: rgb(255, 255, 255); right: 15px;" href="https://github.com/phantomboy0/phantomboy0.github.io/discussions">Archive's Forum</a>
+    </div>
+    </header>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+    <div id="NavBar" style=" align-items: center; height: 30px; overflow-x: auto;white-space: nowrap;display: flex;   margin-top: 10px; gap: 10px;">
+      <a style="margin-left: 3.5%; background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(255, 255, 255); padding-left: 10px; padding-right: 10px;"
+        href="javascript:findtag('')" 
+        >All</a
+      >
+      <a style=" background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(95, 154, 213); padding-left: 5px; padding-right: 5px; "
+            href="javascript:findtag('Ghasemis Gang Wars')"
+            >Ghasemi's Gang Wars</a
+          >
+          <a style="background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(121, 232, 65); padding-left: 5px; padding-right: 5px;"
+          href="javascript:findtag('MyProjects')" 
+          >My Projects</a
+        > 
+        <a style="margin-right: 3.5%; background-color: rgba(22, 19, 21, 0.614); border-radius: 10px; color: rgb(108, 45, 186); padding-left: 5px; padding-right: 5px; "
+        href="javascript:findtag('ArchiveofArchives')"
+        >Archive of Archives</a>
+        </div>
+      </div>
+
+
+    <section
+      style="
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(49, 113, 210);
+        width: 85%;
+        background-color: #1e1e1e;
+        height: auto;
+        border-radius: 15px;
+        margin-bottom: 20px;
+      "
+    >
+
+    
+    <ul id="myUL">
+      <li><h2 id="MyProjects">gg_Ghasemi map (source 1)</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\gmod mods 2023\garry's-mod-Important-mods-part1-2023.zip"
+            >دانلود - بخش اول</a
+          ><br />
+          <a
+          href="files\2023\gmod mods 2023\gm_fork.zip"
+          >gm_fork map DOWNLOAD</a
+        ><br />
+        </p></li>
+      <li><h2>Garry's mod essential mods collection (2023) | مجموعه مود های گریز مود 2023</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\gmod mods 2023\garry's-mod-Important-mods-part1-2023.zip"
+            >دانلود - بخش اول</a
+          ><br />
+          <a
+          href="files\2023\gmod mods 2023\gm_fork.zip"
+          >gm_fork map DOWNLOAD</a
+        ><br />
+        </p></li>
+
+      <li><h2>The Promised Neverland | 約束のネバーランド</h2>
+        <p style="color: white">
+      
+          <a
+            href="https://drive.google.com/file/d/15hJ3WxrFSUYgFsFvsa-VcH3wAwadOu8X"
+            >فصل یک - قسمت 1</a
+          ><br />
+          <a
+          href="https://drive.google.com/uc?export=download&id=1zIbjtmpQoT7kkqT7Bf_9PA56ncR7IsvU"
+          >فصل یک - قسمت 2</a
+        ><br />
+        <a
+        href="https://drive.google.com/uc?export=download&id=1pYvNJTwj47simg3JAAQdPwtEojOm-YWi"
+        >فصل یک - قسمت 3</a
+      ><br />
+      <a
+      href="https://drive.google.com/uc?export=download&id=1elaLbGx9m2gSCwj-V9eMZfIE8Rbyzl98"
+      >فصل یک - قسمت 4</a
+    ><br />
+    <a
+    href="https://drive.google.com/uc?export=download&id=1R6oL3YMIJQ_7NIg4Kw1Y56ajAzb65nca"
+    >فصل یک -قسمت 5</a
+  ><br />
+  <a
+  href="https://drive.google.com/uc?export=download&id=1ei9Ng_eahdZwjq_ntduNhOctKVIxT1Gf"
+  >فصل یک - قسمت 6</a
+  ><br />
+  <a
+  href="https://www.multcloud.com/action/drives!download?drives.cloudType=google_drive&drives.tokenId=3Y9B7pqrJayyLW8Zjko9aYenmGeOM5wiCyblDh1IYq8TlWc4eSJ8FEWYa1ZTFDpD&drives.fileId=1ECO9YCQLL4WyDJ-Z6kmSJubjp3BDN_R-&drives.fileName=%255BAnimeSP%255D%2520Yakusoku%2520no%2520Neverland%2520S2%2520-%252007%2520%255B720p%255D%2520%255Bsub%255D.mkv&drives.fileSize=158326611"
+  >فصل یک - قسمت 7</a
+  ><br />
+  <a
+  href="https://drive.google.com/uc?export=download&id=1gd9iX2qYjqs0X08-9LIyxcIqPP6Q7giw"
+  >فصل یک -قسمت 8</a
+  ><br />
+  <a
+  href="https://drive.google.com/uc?export=download&id=1FIG-P9II6Ivb8N67pvcvkk6GHUC9U04_"
+  >فصل یک -قسمت 9</a
+  ><br />
+  <a
+  href="https://drive.google.com/uc?export=download&id=1sH1rj3NwkZPVV1yo4QC88vczxWM7Rzdy"
+  >فصل یک -قسمت 10</a
+  ><br />
+  <a
+  href="https://drive.google.com/uc?export=download&id=1DlE-o5FHTjM4Zibl8X7scXdp5Y-iFnbV"
+            >فصل یک - قسمت 11</a
+          ><br />
+          <a
+          href="https://drive.google.com/file/d/1G6aDa2bLxxb2tvCi3iQDQI_b7-ZT2geb"
+          >فصل یک - قسمت 12</a
+        ><br />
+  
+        </p></li>
+
+      <li><h2>The Promised Neverland | 約束のネバーランド</h2>
+        <p style="color: white">
+          <a
+            href="https://e.pcloud.link/publink/show?code=kZQtehZ1flSadIVw3mdEB1idDIzARHK0KYX#p=1&tpl=publicfolderlist"
+            >فصل یک - همه قسمت ها</a
+          ><br />
+          <a
+          href="https://e.pcloud.link/publink/show?code=kZrqehZfsbBNxt1oQLIikLpre4KmyjEHwnk#p=1&tpl=publicfolderlist"
+          >فصل دو - همه قسمت ها</a
+        ><br />
+        </p></li>
+
+      <li><h2>Steins;Gate | ュタインズ・ゲート</h2>
+        <p style="color: white">
+          <a
+            href="https://e.pcloud.link/publink/show?code=kZsADhZRa1BAAQ6hHhqOeESzflEDQweqXuV"
+            >فصل یک - زیرنویس فارسی</a
+          ><br />
+          <a
+            href="https://e.pcloud.link/publink/show?code=XZCUDhZfPaWBNij85JI6SyWe8n9EQPCsCIk"
+            >فصل یک - قسمت 1</a
+          ><br />
+          <a
+          href="https://e.pcloud.link/publink/show?code=XZlIDhZwDLSx6FeebHzPcEg873LS4X1Pv6y"
+          >فصل یک - قسمت 2</a
+        ><br />
+        <a
+        href="https://e.pcloud.link/publink/show?code=XZqIDhZsLG5PnSmMe5eBh2VVf1CW0oyVUfV"
+        >فصل یک - قسمت 3</a
+      ><br />
+      <a
+      href="https://e.pcloud.link/publink/show?code=XZ6IDhZeAfrNMvk4G4GBTTJEVNcYhdP3zz7"
+      >فصل یک - قسمت 4</a
+    ><br />
+    <a
+    href="https://e.pcloud.link/publink/show?code=XZUIDhZ0CVEVt9DFuy7QfHIuFV4lFFPyMNX"
+    >فصل یک -قسمت 5</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZIIDhZ2UQAHXMj2DF9bFCK7Scc0HOBFsu7"
+  >فصل یک - قسمت 6</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZAIDhZKwaeb4XCxLX3OClyTOGoDS05WL7X"
+  >فصل یک - قسمت 7</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZNIDhZPWYAo8S6hOuXs8njJTbFQLpPQE6X"
+  >فصل یک -قسمت 8</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZ3IDhZl5QFqpVhH3j6llnnvEieYVOPyc8k"
+  >فصل یک -قسمت 9</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZGIDhZBxdLU5OzSWmhUREiEnHQ24c6lyFk"
+  >فصل یک -قسمت 10</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZ7ADhZYV7fbi4ar0zTOv9D3cbbwbjqm3YX"
+            >فصل یک - قسمت 11</a
+          ><br />
+          <a
+          href="https://e.pcloud.link/publink/show?code=XZkADhZuziApMJ0d6SJoOMcSnAJJQfKmbV0"
+          >فصل یک - قسمت 12</a
+        ><br />
+        <a
+        href="https://e.pcloud.link/publink/show?code=XZXADhZRNSLPIiEAYplT126hrpB9JtwIJMX"
+        >فصل یک - قسمت 13</a
+      ><br />
+      <a
+      href="https://e.pcloud.link/publink/show?code=XZ0ADhZkzYNfjEdDjyftNeI27L0Pz8Q3M8V"
+      >فصل یک - قسمت 14</a
+    ><br />
+    <a
+    href="https://e.pcloud.link/publink/show?code=XZJADhZtJkTcrTn745HC9NcFtH2k7WpA6hk"
+    >فصل یک -قسمت 15</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZFADhZu3V6y8KQk1HwGBNwehfQmR2diiiX"
+  >فصل یک - قسمت 16</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZpADhZ65vk8DSMWbbwP87ctkuo27wifQ9V"
+  >فصل یک - قسمت 17</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZHADhZidh2t0BDdOhQHgD8yT8E3Hcrhpp7"
+  >فصل یک -قسمت 18</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZzADhZv5zc6Y8pMybUyd8awr03skGRe3CV"
+  >فصل یک -قسمت 19</a
+  ><br />
+  <a
+  href="https://e.pcloud.link/publink/show?code=XZRADhZHMutcslLJoQQFppq3PbsEVq5HNQX"
+  >فصل یک -قسمت 20</a><br />
+  <a   href="https://e.pcloud.link/publink/show?code=XZ4ADhZ6X92hsBcLjuwkBSVemAz5mckKCby"
+            >فصل یک - قسمت 21</a
+          ><br />
+          <a
+          href="https://e.pcloud.link/publink/show?code=XZQADhZ6LMCCjyw0tmCNu18WRJULuy9udEX"
+          >فصل یک - قسمت 22</a
+        ><br />
+        <a
+        href="https://e.pcloud.link/publink/show?code=XZYADhZv9wUSJuI4c4lvFu6yicU1XVcVvcX"
+        >فصل یک - قسمت 23</a
+      ><br />
+      <a
+      href="https://e.pcloud.link/publink/show?code=XZbADhZjFPJwz52uHRiNLEIOb0Iqhdc5y6k"
+      >فصل یک - قسمت 24</a
+    ><br />
+    <a
+    href="https://e.pcloud.link/publink/show?code=XZhADhZV1dPLESaq4RQ7KW4WhexrVHfq6Vy"
+    >فصل یک -قسمت 25</a
+  ><br />
+        </p></li>
+
+      <li><h2>"Game Gang" online radio | رادیو آنلاین</h2>
+        <p style="color: white">
+          <audio controls>
+            <Source src=""></Source>        
+          Your browser does not support the audio element.
+          </audio>  <br/>
+          <a
+            href="http://stream.zeno.fm/cpezt3mpzhhvv"
+            >لینک پخش مستقیم</a
+          ><br />
+        </p></li>
+
+      <li><h2>fix for "steam validation rejected" gmod| ارور استیم گریزمود</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\gmod-fix\steam-validation-rejected.zip"
+            >دانلود فایل</a
+          ><br />
+        </p></li>
+
+      <li><h2>Don't Toy with Me, Miss Nagatoro 2nd Season | イジらないで, 長瀞さん</h2>
+        <p style="color: white">
+          <a
+            href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2001%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+            >فصل دو - قسمت 1</a
+          ><br />
+          <a
+          href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2002%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+          >فصل دو - قسمت 2</a
+        ><br />
+        <a
+        href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2003%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+        >فصل دو - قسمت 3</a
+      ><br />
+      <a
+      href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2004%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+      >فصل دو - قسمت 4</a
+    ><br />
+    <a
+    href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2005%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+    >فصل دو -قسمت 5</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2006%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل دو - قسمت 6</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2007%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل دو - قسمت 7</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2008%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل دو -قسمت 8</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2009%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل دو -قسمت 9</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Ijiranaide%2C%20Nagatoro-san%202nd%20Attack/720/%5BAnimeSP%5D%2010%20-%20Ijiranaide%2C%20Nagatoro-san%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل دو -قسمت 10</a
+  ><br />
+        </p></li>
+      
+      <li><h2>EXIF | پاک کردن اطلاعات از عکس ها</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\EXIF\ExifPurge.zip"
+            >دانلود برای ویندوز</a
+          ><br />
+        </p></li>
+
+      <li><h2>Tomo-chan is a girl! | トモちゃんは女の子！</h2>
+        <p style="color: white">
+          <a
+            href="files\2023\tomochan\[AnimeSP] 01 - Tomo-chan wa Onnanoko [720p] [Sub].mkv"
+            >فصل یک - قسمت 1</a
+          ><br />
+          <a
+          href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2002%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+          >فصل یک - قسمت 2</a
+        ><br />
+        <a
+        href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2003%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+        >فصل یک - قسمت 3</a
+      ><br />
+      <a
+      href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2004%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+      >فصل یک - قسمت 4</a
+    ><br />
+    <a
+    href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2005%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+    >فصل یک -قسمت 5</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2006%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل یک - قسمت 6</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2007%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل یک - قسمت 7</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2008%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل یک -قسمت 8</a
+  ><br />
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2009%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل یک -قسمت 9</a
+  ><br />
+  
+  <a
+  href="https://dl2.animesp.xyz/Winter%202023/Tomo-chan%20Is%20a%20Girl%21/720/%5BAnimeSP%5D%2010%20-%20Tomo-chan%20wa%20Onnanoko%21%20%5B720p%5D%20%5BSub%5D.mkv"
+  >فصل یک -قسمت 10</a
+  ><br />
+</p></li>
+    <li><h2>A new wild Forum has arrived!| !فروم سایت ساخته شد</h2>
+    <div>
+      <img src="images/forum1.jpg" alt="" style="width:100%; max-width:320px; height:100%; max-height: 180px; border-radius: 13px; float: right; margin-left: 5px;">
+      <p style="color: white; min-height: 180px;" dir="rtl" >
+        فروم سایت راه اندازی شد و شما الان میتونید فیلم و سریال و بازی و فایل های دیگه رو درخواست کنید تا به سایت اضافه بشه یا درباره چیزایی دیگه با بقیه صحبت کنید!  
+          برای ایجاد پست جدید تو فروم باید اکانت  <a
+          href="https://github.com/login"
+          >گیت هاب</a
+        >  داشته باشید<br/>برای ورود به فروم <a
+        href="https://github.com/login"
+        >اینجا</a
+      > کلیک کنید
+      </p>
+      </li>
+    </div>
+    
+    <li><h2>Blade Runner 2049 (2017) | تیغه دونده 2049</h2>
+      <p style="color: white">
+        <a
+          href="https://dl11.uploding.fun/Movies/2017/01/Blade%20Runner%202049/Blade.Runner.2049.2017.PROPER.480p.RMTeam.mkv"
+          >دانلود (زیرنویس فارسی- 480)</a
+        ><br/>
+        <a
+          href="https://dl11.uploding.fun/Movies/2017/01/Blade%20Runner%202049/Blade.Runner.2049.2017.PROPER.720p.x265.MkvCage.mkv"
+          >دانلود (زیرنویس فارسی- 720)</a
+        ><br/>
+      </p></li>
+    <li><h2>Wednesday | چهارشنبه</h2>
+      <p style="color: white">
+        <a
+          href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E01.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+          >فصل یک - قسمت 1</a
+        ><br />
+        <a
+        href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E02.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+        >فصل یک - قسمت 2</a
+      ><br />
+      <a
+      href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E03.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+      >فصل یک - قسمت 3</a
+    ><br />
+    <a
+    href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E04.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+    >فصل یک - قسمت 4</a
+  ><br />
+  <a
+  href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E05.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+  >فصل یک -قسمت 5</a
+><br />
+<a
+href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E06.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+>فصل یک - قسمت 6</a
+><br />
+<a
+href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E07.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+>فصل یک - قسمت 7</a
+><br />
+<a
+href="https://dl2.uploding.fun/Series3/Wednesday.2022/S01/720p.x265/Wednesday.S01E08.10bit.x265.720p.WEBRip.2CH.PSA.ZarFilm.mkv"
+>فصل یک -قسمت 8</a
+><br />
+      </p></li>
+      <li><h2>Kubo Won't Let Me Be Invisible | 久保さんは僕を許さない</h2>
+      <p style="color: white">
+        <a
+          href="https://9animetv.to/watch/kubo-wont-let-me-be-invisible-18254?ep=97130"
+          >فصل یک - پخش آنلاین همه قسمت ها</a
+        ><br />
+      </p></li>
+      <li><h2>The Witcher | ویچر</h2>
+      <p style="color: white">
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E01.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت اول </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E02.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت دوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E03.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت سوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E04.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت چهارم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E05.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت پنجم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E06.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت ششم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E07.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت هفتم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S01/The.Witcher.S01E08.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت هشتم </a
+        ><br />
+        <br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E01.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >فصل دو - قسمت اول </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E02.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت دوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E03.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت سوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E04.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت چهارم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E05.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت پنجم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E06.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت ششم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E07.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >قسمت هفتم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/The%20Witcher/S02/The.Witcher.S02E08.720p.10bit.WEB-DL.2CH.x265.HEVC.PSA.mkv"
+          >فصل دو - قسمت هشتم </a
+        ><br />
+      </p></li>
+      <br />
+
+      <li><h2 style="color: white">Inside Job | توطئه داخلی</h2>
+      <p style="color: white">
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E01.720p.WEBRip.2CH.x265.HEVC-PSA.mkv"
+          >فصل یک - قسمت اول </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E02.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت دوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E03.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت سوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E04.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت چهارم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E05.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت پنجم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E06.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت ششم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E07.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت هفتم </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E08.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت هشتم </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E09.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت نهم </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S01/Inside.Job.S01E10.720p.WEBRip.2CH.x265.HEVC.PSA.mkv"
+          >فصل یک - قسمت دهم </a
+        ><br />
+        
+        <br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E01.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >فصل دو - قسمت اول </a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E02.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت دوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E03.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت سوم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E04.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت چهارم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E05.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت پنجم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E06.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت ششم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E07.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >قسمت هفتم</a
+        ><br />
+        <a
+          href="https://dl2.uploding.fun/Series/Inside.Job.2021/S02/720p.x265/Inside.Job.S02E08.720p.10bit.WEBRip.2CH.x265.HEVC.PSA.ZarFilm.mkv"
+          >فصل دو - قسمت هشتم </a
+        ><br />
+      </p></li>
+      <li><h2 style="color: white">Bocchi the Rock! | ぼっち・ざ・ろっく！</h2>
+      <p style="color: white">
+        <a href="https://9anime.vc/watch/bocchi-the-rock-17479?ep=94535"
+          >فصل یک - پخش آنلاین همه قسمت ها </a
+        ><br />
+
+        <br />
+      </p></li>
+
+     <li><h2 style="color: white">هاست سایت برای اولین بار روی گیت هاب!</h2>
+      <p style="color: white">
+        برای اولین بار در تاریخ سایت هاست شد و بخاطر کمبود منابع این هاست روی
+       گیت هاب! که برای برنامه نویسی هست انجام شد
+      </p></li>
+<div  style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+      <img alt="No Result Found" id="NoResult" style="display: none;" width="76px" height="76px" src="notFound.svg">
+    </div>
+       </ul>
+    </section>
+
+   <div style="overflow: auto; margin: auto; width: 90%;">
+<a href="javascript:delay('https://google.com')" class="card-1"><img alt="question-mark" style="z-index: 2; position: relative; margin-top: 5%; margin-left: 3%; height:40%; float: left;" src="index/question.svg"><h3 style="position: relative; z-index: 2; float: left; font-size: 3.2vw; margin-top: 10%; margin-left: 0%; ">FAQ</h3></a> <a href="javascript:delay('https://google.com')" class="card-2"><img alt="dollor-icon" style="z-index: 2; position: relative; margin-top: 5%; margin-left: 3%; height:40%; float: left;" src="index/money.svg"><h3 style="position: relative; z-index: 2; float: left; font-size: 3.2vw; margin-top: 10%; margin-left: 0%;">Donate</h3></a> <a href="javascript:delay('https://google.com')" class="card-3"></a> <a href="javascript:delay('https://google.com')" class="card-4"></a>
+</div>
+
+    <footer
+    
+      style="
+        margin: auto;
+        padding: 20px;
+        width: 86%;
+        background-color: #4d0baa;
+        height: 50px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    > <a href="#Header"  type="button" style="line-height: 1;display: flex;justify-content: center; text-align: center;align-items: center; float: left;left:6%; position:absolute; background-color: #1f2028; border-color: #1f2028; border-radius: 10px; color: white; height: 10%; width: 30px;">↑</a>
+      <p style="text-align: center; color: white">
+        <a
+          href="http://discordapp.com/users/292009748742537227"
+          style="font-size: large;line-height: 1; color: white"
+          >Discord</a
+        >
+        ●
+        <a href="https://t.me/amir5lucky" style="font-size: large;line-height: 1; color: white"
+          >Telegram</a
+        >
+        ●
+        <a
+          href="https://github.com/phantomboy0"
+          style="font-size: large;line-height: 1; color: white"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+   
+     </body>
+  <div id="bottom" style="margin: auto;"></div>
+</html>

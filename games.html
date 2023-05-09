@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="google-site-verification" content="RascRloBy8_Lms3f5O9lukfEQ8NSf_t4rqfUxDd1yrQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-<meta name="keywords" content="Amir's center, amir's,center, download">
+<meta name="keywords" content="Archive, Download, movie, amir's archive, amir">
 <meta name="description" content="A Website For archive and things!">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="canonical" href="https://amiru.eu.org/"/>
@@ -13,7 +13,7 @@
     
     
     
-    <title class="title">Amir's Center</title>
+    <title class="title">Amir's Games</title>
     <h1
       style="
       
@@ -27,118 +27,50 @@
       
       class="title"
     >
-    Amir's Center
+    Amir's Games
     </h1>
     <h2 style="background-color: transparent; font-weight: 400; font-family: 'Rubik', sans-serif; text-align: center; font-size:larger;">A website about <span class="title">everything</span> and <span class="title">nothing</span>.</h2>
-    <script>
-     function myFunction() {
+    <script language="JavaScript">
+ 
   
-var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
- input = document.getElementById('myInput');
- filter = input.value.toUpperCase();
- ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
-  noresult = document.getElementById("NoResult");
- nani = false;
-
-for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("h2")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-      nani = true;
-    } else {
-      li[i].style.display = "none";
-     
-    }
-
-    
-  }
-
-  if (nani == true) {
-    noresult.style.display = "none";
-  } else {
-    noresult.style.display = "";
-  }
-
-  
-  
-}
-
-function findtag(filter) {
-  
-  var input, filter, ul, li, a, i, txtValue, showing, noresult, nani;
-
-   ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-    noresult = document.getElementById("NoResult");
-   nani = false;
-  
-  for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("h2")[0];
-      txtValue = a.id;
-      if (txtValue.indexOf(filter) > -1) {
-        li[i].style.display = "";
-        nani = true;
-      } else {
-        li[i].style.display = "none";
-       
-      }
-  
-      
-    }
-  
-    if (nani == true) {
-      noresult.style.display = "none";
-    } else {
-      noresult.style.display = "";
-    }
-  
-    
-    
-  }
-
-function getFocosed() {
-  var input;
-  input = document.getElementById('myInput');
-  input.setAttribute("placeholder", "")
 
 
-}
 
-var now = new Date();
+
+ 
+ window.onload = runFunction;
+ const interval = setInterval(runFunction
+   // method to be executed;
+, 1000);
+
+runFunction();
+
+function runFunction() {
+  var now = new Date();
 var sunday = new Date();
-sunday.setDate(now.getDate() - now.getDay()); // Make Sunday
-sunday.setHours(11); // Set 11am
-sunday.setMinutes(0);
-sunday.setSeconds(0);
-sunday.setMilliseconds(0);
-if (sunday < now) sunday.setDate(sunday.getDate() + 7); // Make sure it's future
+let sec , min , hr , day, othermili
+sunday.setUTCDate(now.getUTCDate() - now.getUTCDay() - 4); // Make Sunday
+sunday.setUTCHours(0); // Set 11am
+sunday.setUTCMinutes(0);
+sunday.setUTCSeconds(0);
+sunday.setUTCMilliseconds(0);
+if (sunday < now) sunday.setUTCDate(sunday.getUTCDate() + 7); // Make sure it's future
 millisecondsLeft = sunday - now;
 
-var sus = 0;
-function focosLost() {
-  var input;
-  
-  input = document.getElementById('myInput');
-  const names = ["Search for Things...", "Search for Movies...", "Search for Games...", "Search for Serise...", "Search for Files..."];
-  sus++;
-  if (sus == 5) {
-    sus = 0;
-  }
-  input.setAttribute("placeholder", names[sus])
-  
-  
+
+sec = Math.round(millisecondsLeft / 1000) % 60 ;
+millisecondsLeft = millisecondsLeft - sec * 1000
+min = Math.round(millisecondsLeft / 60000) % 60;
+millisecondsLeft = millisecondsLeft - min * 6000
+hr = Math.round(millisecondsLeft / 3600000) % 24 ;
+millisecondsLeft = millisecondsLeft - hr * 3600000
+day = Math.round(millisecondsLeft  / 86400000) % 24;
+ 
+  document.getElementById("csgotimer").innerHTML = day + " Days & " + hr + " hours & " + min + " minutes & " + sec +" seconds until csgo case drop reset";
+
 }
 
-function Tag(tag) {
-  var input;
-  input = document.getElementById('myInput');
 
-  input.value = tag;
-  myFunction();
-  input.value = "";
-}
 
 function delay (URL) {
     setTimeout( function() { window.location = URL }, 500 );
@@ -416,6 +348,23 @@ display: none;
  }
     </style>
   </head>
+  <header>
+    <div
+    style="
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 20px;
+      width: 85%;
+      background-color: #b02a2a;
+      height: 30px;
+      border-radius: 15px;
+      position: relative;
+      z-index: 3;
+    "
+
+    
+  ><h3 id="csgotimer" style="color: wheat; display: flex; justify-content: center; align-items: center; padding-top: -10px;" ></h3></div>
+  </header>
   <body
     style="
       margin: auto;
@@ -423,7 +372,7 @@ display: none;
       font-family: 'Almarai', sans-serif;
     "
   >
-    <header></header>
+    
    
         
 
@@ -440,7 +389,7 @@ display: none;
         margin-top: 30px;
         border-style: solid;
         border-width: 3px;
-        border-color: #4d0baa;
+        border-color: #b02a2a;
         width: 85%;
         background-color: #1e1e1e;
         height: auto;
@@ -450,19 +399,7 @@ display: none;
     >
 
   
-        <a href="archive.html" style="background-color: #1f2028; height: 100px; margin-top: 20px; border-radius: 15px;  overflow: hidden; display: block;"><img style="margin-top: 18px; margin-left: 20px; height: auto; width: 64px;"  src="images/archive.png">
-          <h2 style="display: inline-block; vertical-align: middle; padding-bottom: 70px; overflow: auto; text-overflow: clip;">File Archive</h2>
-          <img style="margin-top: 18px; display: inline-block; vertical-align: middle; padding-bottom: 70px; float: right;" height="64px" width="64px" src="images/left.svg">
-    
-        </a>
-        <a href="" style="background-color: #1f2028; height: 100px; margin-top: 20px; border-radius: 15px;  overflow: hidden; display: block;"><img style="margin-top: 18px; margin-left: 20px; height: auto; width: 64px;"  src="images/ggw.png">
-          <h2 style="display: inline-block; vertical-align: middle; padding-bottom: 70px; overflow: auto; text-overflow: clip;">Ghasemi's Gang Wars</h2>
-          <img style="margin-top: 18px; display: inline-block; vertical-align: middle; padding-bottom: 70px; float: right;" height="64px" width="64px" src="images/left.svg">
-    
-        </a>
-        <a href="games.html" style="background-color: #1f2028; height: 100px; margin-top: 20px; border-radius: 15px;  overflow: hidden; display: block;"><img style="margin-top: 18px; margin-left: 20px; height: auto; width: 64px;"  src="images/steam.png">
-          <h2 style="display: inline-block; vertical-align: middle; padding-bottom: 70px; overflow: auto; text-overflow: clip;">Games</h2>
-          <img style="margin-top: 18px; display: inline-block; vertical-align: middle; padding-bottom: 70px; float: right;" height="64px" width="64px" src="images/left.svg">
+      
     
         </a>
    
@@ -483,7 +420,7 @@ display: none;
         margin: auto;
         padding: 20px;
         width: 86%;
-        background-color: #4d0baa;
+        background-color: #b02a2a;
         height: 50px;
         border-radius: 15px;
         margin-bottom: 15px;
