@@ -1,0 +1,50 @@
+
+
+  h2 {
+    margin-left: 20px;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+
+  .green-b {
+    border-width: 3px;
+    border-color: #047c58;
+    border-radius: 15px;
+    border-style: solid;
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .green {
+    position: absolute;
+   
+    height: 100%;
+    width: 15px;
+    color: #047c58;
+    background-color: #047c58;
+  }
+
+  .blue-b {
+    border-width: 3px;
+    border-color: #04467c;
+    border-radius: 15px;
+    border-style: solid;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .blue {
+    position: absolute;
+   
+    height: 100%;
+    width: 15px;
+    color: #04467c;
+    background-color: #04467c;
+  }
