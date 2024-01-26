@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      
+        <h1 class="head">Random NumText Generator 
+        </h1>
+        <p>
+          Enter <span style="color: red">%</span> in your text to add a random
+          percentage.
+        </p>
+        <p>
+          Enter <span style="color: rgb(14, 104, 52)">#</span> in your text to
+          add a random number.
+        </p>
+        <p>
+          select you number range by entering
+          <span style="color: rgb(14, 104, 52)">#min-max</span>.
+        </p>
+        <p>
+          Entering <span style="color: rgb(14, 104, 52)">#0-10</span> will
+          result in a random number between 0 and 10 (including 0 and 10).
+        </p>
+
+        <textarea
+          name="Text1"
+          id="userText"
+          cols="40"
+          rows="5"
+          placeholder="Example: Your IQ is #1-777 and you are % Bald."
+        ></textarea
+        ><br />
+
+        <button
+          type="submit"
+          name="submitbtn"
+          id="submitbtn"
+          value="Create"
+          onclick="Create()"
+        />Create</button>
+
+       <div id="result-div">
+        <pre id="result"></pre>
+       </div>
+        
+      <a id="author" href="https://github.com/phantomboy0">By Amirhosein Talebi</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
