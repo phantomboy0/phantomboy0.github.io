@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      
+        <h1 class="head">StopWatch
+        </h1>
+        <h2 id="timer">0:00:00:000</h2>
+       
+
+        
+
+        <button
+          type="submit"
+          name="startbtn"
+          id="startbtn"
+          value="Start"
+          onclick="toggleTimer()"
+        />Start</button>
+
+        <button
+        type="submit"
+        name="lapbtn"
+        id="lapbtn"
+        value="Create"
+        onclick="lap()"
+      />Lap</button><br>
+
+       <div id="result-div">
+        <ol id="laps">
+        </ol>
+       </div>
+        
+      <a id="author" href="https://github.com/phantomboy0">By Amirhosein Talebi</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
