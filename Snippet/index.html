@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snipper Note</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+      "
+    >
+      <button
+        onclick="location.href='https://github.com/phantomboy0';"
+        class="credit"
+      >
+        Snipper v1.0.0 By Amirhosein Talebi
+      </button>
+     
+      <button
+        title="Save Page"
+        onclick="savePageState()"
+        class="barBtn"
+        id="SaveBtn"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-230 -200 900 900">
+          <path
+            fill="#ffffff"
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+          />
+        </svg>
+      </button>
+      <button
+      title="Change Background Image"
+      onclick="changeBackground()"
+      class="barBtn"
+      id="bgBtn"
+    >
+    <img width="24" height="24" src="img/image.svg" alt="Reset" /></button>
+      <button
+        title="Toggle Dark Mode"
+        onclick="ToggleDarkMode()"
+        class="barBtn"
+        id="DarkModeBtn"
+      >
+        <img width="24" height="24" src="img/dark.svg" alt="Reset" />
+      </button>
+      <button onclick="createNewSnippet()" id="newSnippetBtn">
+        + Create New Snippet
+      </button>
+      <button
+      title="ToolS"
+      onclick="toggleToolBox()"
+        class="barBtn"
+        id="deleteChacheBtn"
+      >
+        <img width="24" height="24" src="img/toolbox.svg" alt="Tools" />
+      </button>
+      <button
+        title="HELP!"
+        onclick="createHelpSnippet()"
+        class="barBtn"
+        id="helpBtn"
+      >
+        <img width="24" height="24" src="img/question.svg" alt="Reset" />
+      </button>
+      <button
+       
+        title="Reset Factroy (also Updates the app)"
+        onclick="deletePageState()"
+        class="barBtn"
+        id="toolboxBtn"
+      >
+        <img width="24" height="24" src="img/refresh.svg" alt="Reset" />
+      </button>
+
+      <!-- This is where toolBox begin -->
+      <div anchor="helpBtn" id="toolBoxDiv">
+        <div>
+          <div onclick="createClockSnippet()" class="toolBox" id="clockBtn">
+            <div
+          
+              onclick="createClockSnippet()"
+              class="toolBoxBarBtn"
+              id="toolboxBtn"
+            >
+              <img width="24" height="24" src="img/clock.svg" alt="Reset" />
+            </div>
+            <p class="toolBoxLable">Clock</p>
+        </div>
+        
+          <div class="toolbox_btn">
+            <div onclick="createStopWatchSnippet()" class="toolBox" id="stopWatchBtn">
+              <div
+              
+                onclick="createStopWatchSnippet()"
+                class="toolBoxBarBtn"
+                id="toolboxBtn"
+              >
+                <img width="24" height="24" src="img/stopwatch.svg" alt="Reset" />
+              </div>
+              <p class="toolBoxLable1">StopWatch</p>
+          </div>
+
+          <div class="toolbox_btn">
+            <div class="toolBox" id="weatherBtn">
+              <div
+              
+                onclick="createHelpSnippet()"
+                class="toolBoxBarBtn"
+                id="toolboxBtn"
+              >
+                <img width="28" height="28" src="img/weather.svg" alt="Reset" />
+              </div>
+              <p class="toolBoxLable2">Weather</p>
+          </div>
+          
+        </div>
+      
+        
+      </div>
+        <!-- This is where toolBox end -->
+    </div>
+<input type="file" id="fileInput" style="display: none;"   (change)="onSelectFile3($event)">
+    <script src="script.js"></script>
+  </body>
+</html>

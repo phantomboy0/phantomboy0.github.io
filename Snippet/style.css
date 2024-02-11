@@ -1,0 +1,222 @@
+h1 {
+  user-select: none;
+}
+
+div {
+  user-select: none;
+}
+.snippet {
+  border: 2px solid #8ce04e;
+
+  background-color: #e6e6e6;
+  width: 300px;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.016),
+    0.6px 0.6px 2.3px rgba(0, 0, 0, 0.023), 1.7px 1.7px 4px rgba(0, 0, 0, 0.028),
+    3.7px 3.7px 6.2px rgba(0, 0, 0, 0.033),
+    7.1px 7.1px 9.1px rgba(0, 0, 0, 0.037),
+    12.7px 12.7px 13.4px rgba(0, 0, 0, 0.042),
+    22.1px 22.1px 20.1px rgba(0, 0, 0, 0.047),
+    35.5px 35.5px 32px rgba(0, 0, 0, 0.054), 50px 50px 60px rgba(0, 0, 0, 0.07);
+  position: absolute;
+  cursor: grab;
+}
+
+.snippet-header {
+  background-color: #8ce04e;
+  margin: -1px;
+  width: 100.6%;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  height: 40px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.headerColor {
+  width: 100%;
+  position: absolute;
+  margin-left: -20px;
+  height: 40px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.addBtn {
+  width: 95%;
+  margin-bottom: 8px;
+  border-radius: 0 0 25px 25px;
+  border: rgb(158, 158, 158) solid 1px;
+}
+
+input[type="text"] {
+  border: none;
+  background-color: #e6e6e6;
+  width: 77%;
+  margin-bottom: 20px;
+  margin-left: 13px;
+}
+
+.header[type="text"] {
+  font-size: 20px;
+  text-align: center;
+  background-color: #ff1515;
+  margin-top: 5px;
+  background-color: #00000000;
+  z-index: 1;
+  position: relative;
+}
+
+#newSnippetBtn {
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  z-index: 999;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#deleteChacheBtn {
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  z-index: 999;
+}
+
+.deleteNote {
+  position: absolute;
+  float: left;
+  left: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #00000000;
+  border: none;
+  color: #ff1515;
+}
+
+.barBtn {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: x-large;
+  z-index: 9999999999999999999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color_circle {
+  width: 12px;
+  height: 22px;
+  border-radius: 100%;
+  border: none;
+  opacity: 0;
+  margin-top: -5px;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: none;
+  background-color: blue;
+  margin-bottom: -16px;
+  margin-left: 6px;
+}
+
+.credit,
+:visited {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #5f5f5faf;
+  text-decoration-style: dotted;
+  border: none;
+  background-color: #00000000;
+}
+
+#toolBoxDiv {
+  inset: unset;
+  position: absolute;
+
+  width: 170px;
+  height: 160px;
+
+  display: flex;
+  justify-content: center;
+
+  bottom: 0;
+  margin-bottom: 70px;
+  left: 61.6%;
+
+  border-radius: 15px;
+  user-select: none;
+  visibility: hidden;
+}
+
+.toolBox {
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #d5d5d5;
+}
+
+.toolBoxBarBtn {
+  border-radius: 15px;
+  position: relative;
+  background-color: black;
+  margin: -1px;
+
+  width: 50px;
+  height: 50px;
+  font-size: x-large;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toolBoxLable {
+  position: absolute;
+  left: 60px;
+  top: 0px;
+}
+.toolBoxLable1 {
+  position: absolute;
+  left: 60px;
+  top: 55px;
+}
+
+.toolBoxLable2 {
+  position: absolute;
+  left: 60px;
+  top: 107px;
+}
+
+.toolbox_btn {
+  margin-top: 5px;
+}
