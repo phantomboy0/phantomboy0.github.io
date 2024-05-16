@@ -1,0 +1,399 @@
+.cap_right {
+  position: absolute;
+  padding-left: 195px;
+}
+
+.cap_left {
+  position: absolute;
+}
+
+.line {
+  position: absolute;
+  margin-top: -40px;
+}
+
+.line_LEF {
+  position: absolute;
+  margin-top: 48px;
+  padding-left: 1430px;
+}
+
+#txt1 {
+  position: absolute;
+  font-family: monospace;
+  color: #b8eba3;
+  padding-left: 82%;
+  user-select: none;
+}
+#cap_right1 {
+  padding-left: 85%;
+}
+
+#cap_left1 {
+  padding-left: 80%;
+}
+
+.div_circ {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(80, 216, 91);
+  display: flex;
+
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+@keyframes cap_left_1 {
+  from {
+    padding-left: 80%;
+  }
+  to {
+    padding-left: 77.5%;
+  }
+}
+
+@keyframes cap_left_11 {
+  from {
+    padding-left: 77.5%;
+  }
+  to {
+    padding-left: 80%;
+  }
+}
+
+.cap_left1_dc {
+  animation-name: cap_left_1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_left1_c {
+  animation-name: cap_left_11;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cap_right_1 {
+  from {
+    padding-left: 85%;
+  }
+  to {
+    padding-left: 87.5%;
+  }
+}
+
+@keyframes cap_right_11 {
+  from {
+    padding-left: 87.5%;
+  }
+  to {
+    padding-left: 85%;
+  }
+}
+
+.cap_right1_dc {
+  animation-name: cap_right_1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_right1_c {
+  animation-name: cap_right_11;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt1_dc {
+  animation-name: cap_txt_1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt1_c {
+  animation-name: cap_txt_1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+@keyframes cap_txt_1 {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.line1_dc {
+  animation-name: line1;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line1 {
+  from {
+  }
+}
+
+#txt2 {
+  position: absolute;
+  font-family: monospace;
+  color: #b8eba3;
+  padding-left: 89%;
+  user-select: none;
+}
+#cap_right2 {
+  padding-left: 92%;
+}
+
+#cap_left2 {
+  padding-left: 87%;
+}
+@keyframes cap_left_2 {
+  from {
+    padding-left: 87%;
+  }
+  to {
+    padding-left: 84.5%;
+  }
+}
+
+@keyframes cap_left_21 {
+  from {
+    padding-left: 84.5%;
+  }
+  to {
+    padding-left: 87%;
+  }
+}
+
+.cap_left2_dc {
+  animation-name: cap_left_2;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_left2_c {
+  animation-name: cap_left_21;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cap_right_2 {
+  from {
+    padding-left: 92%;
+  }
+  to {
+    padding-left: 94.5%;
+  }
+}
+
+@keyframes cap_right_21 {
+  from {
+    padding-left: 94.5%;
+  }
+  to {
+    padding-left: 92%;
+  }
+}
+
+.cap_right2_dc {
+  animation-name: cap_right_2;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_right2_c {
+  animation-name: cap_right_21;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt2_dc {
+  animation-name: cap_txt_2;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt2_c {
+  animation-name: cap_txt_2;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+@keyframes cap_txt_2 {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.line2_dc {
+  animation-name: line2;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line2 {
+  from {
+  }
+}
+
+#txt3 {
+  position: absolute;
+  font-family: monospace;
+  color: #b8eba3;
+  padding-left: 77%;
+  user-select: none;
+}
+#cap_right3 {
+  padding-left: 80%;
+}
+
+#cap_left3 {
+  padding-left: 75%;
+}
+@keyframes cap_left_3 {
+  from {
+    padding-left: 75%;
+  }
+  to {
+    padding-left: 72.5%;
+  }
+}
+
+@keyframes cap_left_31 {
+  from {
+    padding-left: 72.5%;
+  }
+  to {
+    padding-left: 75%;
+  }
+}
+
+.cap_left3_dc {
+  animation-name: cap_left_3;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_left3_c {
+  animation-name: cap_left_31;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cap_right_3 {
+  from {
+    padding-left: 80%;
+  }
+  to {
+    padding-left: 82.5%;
+  }
+}
+
+@keyframes cap_right_31 {
+  from {
+    padding-left: 82.5%;
+  }
+  to {
+    padding-left: 80%;
+  }
+}
+
+.cap_right3_dc {
+  animation-name: cap_right_3;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_right3_c {
+  animation-name: cap_right_31;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt3_dc {
+  animation-name: cap_txt_3;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.cap_txt3_c {
+  animation-name: cap_txt_3;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+
+@keyframes cap_txt_3 {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.line3_dc {
+  animation-name: line3;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line3 {
+  from {
+  }
+}

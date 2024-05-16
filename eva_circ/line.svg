@@ -1,0 +1,5 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1449.81" height="61.28" viewBox="0 0 1449.81 61.28">
+  <path d="M0,73.5H1271.35c16.62-1.61,19.3-50.59,56.71-53.41s49.18,55.29,58,53.41l63.7.76" transform="translate(0 -16.49)" style="fill: none;stroke: #231f20;stroke-miterlimit: 10;stroke-width: 7px"/>
+  <animate attributeName="d" dur="500ms" from="M0,73.5H1271.35c16.62-1.61,19.3-50.59,56.71-53.41s49.18,55.29,58,53.41l63.7.76" to="M0,72H1271.35l58.59,0c31,0,41.35,0,56.12,0s36.09.25,62.48.74" />
+    <animate attributeName="transform" dur="500ms" to="translate(0 -68.42)" />
+</svg>
