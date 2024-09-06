@@ -1,0 +1,156 @@
+/* Reset some default styling */
+@font-face {
+  font-family: "Balsamiq Sans";
+  src: url("BalsamiqSans-Regular.woff2") format("woff2"),
+    url("BalsamiqSans-Regular.woff") format("woff");
+  font-weight: 1;
+  font-style: normal;
+  font-display: swap;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0c0e10;
+  color: #fff;
+  font-family: "Balsamiq Sans", sans-serif;
+  font-weight: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  background-color: #0e1113;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.email,
+.phone {
+  color: #ccc;
+  font-size: 14px;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.icons {
+  margin: 20px 0;
+}
+
+.icon {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.section-heading {
+  font-size: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 198, 220, 1) 0%,
+    rgba(81, 74, 157, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  border-bottom: 2px solid; /* Width of the border */
+  border-image: linear-gradient(
+      90deg,
+      rgba(36, 198, 220, 1) 0%,
+      rgba(81, 74, 157, 1) 100%
+    )
+    1;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.projects {
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #13171b;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.old-archive {
+  background: linear-gradient(
+    90deg,
+    rgba(179, 255, 171, 1) 0%,
+    rgba(18, 255, 247, 1) 100%
+  );
+
+  font-size: 24px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  text-shadow: 0 0 0px rgba(179, 255, 171, 0.7),
+    /* Light green shadow */ 0 0 10px rgba(100, 255, 200, 0.6),
+    /* Middle teal shadow */ 0 0 15px rgba(18, 255, 247, 0.5); /* Darker blue shadow */
+}
+
+.amlak-backend {
+  background: linear-gradient(
+    90deg,
+    rgba(228, 58, 21, 1) 0%,
+    rgba(230, 82, 69, 1) 100%
+  );
+
+  font-size: 24px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  text-shadow: 0 0 10px rgb(231, 81, 81);
+  text-align: left;
+}
+
+.archiview {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 8, 1) 0%,
+    rgba(255, 200, 55, 1) 100%
+  );
+
+  font-size: 24px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  text-shadow: 0 0 10px #e07e22;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 12px;
+  color: #aaa;
+  text-align: left;
+}
