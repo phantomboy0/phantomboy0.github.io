@@ -99,8 +99,11 @@ body {
 }
 
 .project-title {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0;
+  text-align: left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .old-archive {
@@ -109,14 +112,21 @@ body {
     rgba(179, 255, 171, 1) 0%,
     rgba(18, 255, 247, 1) 100%
   );
-
-  font-size: 24px;
+  position: absolute;
+  filter: blur(3px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: left;
-  text-shadow: 0 0 0px rgba(179, 255, 171, 0.7),
-    /* Light green shadow */ 0 0 10px rgba(100, 255, 200, 0.6),
-    /* Middle teal shadow */ 0 0 15px rgba(18, 255, 247, 0.5); /* Darker blue shadow */
+}
+
+.old-archive-text {
+  background: linear-gradient(
+    90deg,
+    rgba(179, 255, 171, 1) 0%,
+    rgba(18, 255, 247, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .amlak-backend {
@@ -125,13 +135,20 @@ body {
     rgba(228, 58, 21, 1) 0%,
     rgba(230, 82, 69, 1) 100%
   );
-
-  font-size: 24px;
+  position: absolute;
+  filter: blur(3px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 24px;
-  text-shadow: 0 0 10px rgb(231, 81, 81);
-  text-align: left;
+}
+
+.amlak-backend-text {
+  background: linear-gradient(
+    90deg,
+    rgba(228, 58, 21, 1) 0%,
+    rgba(230, 82, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .archiview {
@@ -140,13 +157,21 @@ body {
     rgba(255, 128, 8, 1) 0%,
     rgba(255, 200, 55, 1) 100%
   );
-
-  font-size: 24px;
+  position: absolute;
+  filter: blur(3px);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 24px;
-  text-shadow: 0 0 10px #e07e22;
-  text-align: left;
+}
+
+.archiview-text {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 8, 1) 0%,
+    rgba(255, 200, 55, 1) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .project-description {
